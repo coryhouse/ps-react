@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Docs from './docs/Docs';
 import './index.css';
+import '../node_modules/highlight.js/styles/ocean.css';
 
 ReactDOM.render(
-  <App />,
+  <Docs />,
   document.getElementById('root')
 );

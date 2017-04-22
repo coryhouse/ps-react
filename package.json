@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "highlight.js": "^9.10.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
@@ -16,6 +17,7 @@
     "babel-runtime": "^6.20.0",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
     "chalk": "1.1.3",
+    "chokidar": "^1.6.1",
     "connect-history-api-fallback": "1.3.0",
     "cross-spawn": "4.0.2",
     "css-loader": "0.26.1",
@@ -35,10 +37,12 @@
     "http-proxy-middleware": "0.17.3",
     "jest": "18.1.0",
     "json-loader": "0.5.4",
+    "npm-run-all": "^4.0.2",
     "object-assign": "4.1.1",
     "postcss-loader": "1.2.2",
     "promise": "7.1.1",
     "react-dev-utils": "^0.5.2",
+    "react-docgen": "^2.14.0",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
     "webpack": "1.14.0",
@@ -47,7 +51,11 @@
     "whatwg-fetch": "2.0.2"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "prestart": "npm run gen:docs",
+    "start": "npm-run-all --parallel start:docs gen:docs-watch",
+    "start:docs": "node scripts/start.js",
+    "gen:docs": "node scripts/generateComponentData.js",
+    "gen:docs-watch": "npm run gen:docs -- --watch",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
