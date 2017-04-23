@@ -53,3 +53,17 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# built component library
+/lib
+
+# built docs
+/docs
+
+# Generated component data
+/config/componentData.js
+
+# VSCode launch configuration
+launch.json
+
+# Webstorm
+.idea
