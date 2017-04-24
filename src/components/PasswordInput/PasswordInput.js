@@ -41,7 +41,7 @@ class PasswordInput extends React.Component {
           <a
             href="#"
             onClick={this.toggleShowPassword}
-            style={{ marginLeft: 5 }}>
+            style={{ marginLeft: 15 }}>
             <EyeIcon />
           </a>
         }
