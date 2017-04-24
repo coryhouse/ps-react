@@ -1,0 +1,16 @@
+/* Note how short the selectors can be here compared to plain CSS. With CSS modules, everything
+is scoped to the component automatically, so you don't have to spend time
+writing long, specific CSS selectors like we do with BEM. - they'll only apply
+to the component where this css is imported. :)
+*/
+.error {
+  color: red;
+}
+
+.inputError {
+  border: solid 1px red;
+}
+
+.fieldset {
+  margin-bottom: 16px;
+}

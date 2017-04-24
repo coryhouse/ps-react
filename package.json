@@ -5,7 +5,8 @@
   "dependencies": {
     "highlight.js": "^9.10.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "styled-components": "^1.4.5"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
