@@ -27,7 +27,7 @@ class PasswordInput extends React.Component {
     return (
       <TextInput
         htmlId={htmlId}
-        label={label || 'Password'}
+        label={label}
         placeholder={placeholder}
         type={showPassword ? 'text' : 'password'}
         onChange={onChange}
@@ -41,7 +41,7 @@ class PasswordInput extends React.Component {
           <a
             href="#"
             onClick={this.toggleShowPassword}
-            style={{ marginLeft: 15 }}>
+            style={{ marginLeft: 5 }}>
             <EyeIcon />
           </a>
         }
