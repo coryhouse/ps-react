@@ -1,15 +1,31 @@
 {
   "name": "ps-react",
   "version": "0.1.0",
-  "private": true,
+  "main": "./lib/index.js", 
+  "engines": { 
+    "node": ">=4.0.0"
+  },
+  "author": { 
+    "name": "Cory House", 
+    "email": "cory@reactjsconsulting.com", 
+    "url": "http://reactjsconsulting.com/" 
+  },
+  "files": [ "lib" ],
+  "keywords": [
+    "components",
+    "react",
+    "react-component",
+    "toolkit",
+    "pluralsight"
+  ],
   "dependencies": {
-    "highlight.js": "^9.10.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "styled-components": "^1.4.5"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",
+    "babel-cli": "^6.24.1",
     "babel-core": "6.22.1",
     "babel-eslint": "7.1.1",
     "babel-jest": "18.0.0",
@@ -20,6 +36,7 @@
     "chalk": "1.1.3",
     "chokidar": "^1.6.1",
     "connect-history-api-fallback": "1.3.0",
+    "cross-env": "^4.0.0",
     "cross-spawn": "4.0.2",
     "css-loader": "0.26.1",
     "detect-port": "1.1.0",
@@ -35,6 +52,8 @@
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.10.0",
     "fs-extra": "0.30.0",
+    "gh-pages": "^0.12.0",
+    "highlight.js": "^9.10.0",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.3",
     "jest": "18.1.0",
@@ -54,14 +73,22 @@
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.2"
   },
+  "homepage": "http://coryhouse.github.io/ps-react/",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
     "start:docs": "node scripts/start.js",
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs -- --watch",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "build:docs": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "build:css": "cpx \"./src/components/**/*.css\" ./lib",
+    "prebuild:lib": "rimraf lib",
+    "build:lib": "npm run build:commonjs && npm run build:css",
+    "predeploy:docs": "npm run build:docs",
+    "deploy:docs": "gh-pages -d build",
+    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
+    "prepublish:": "npm run build:lib"
   },
   "jest": {
     "collectCoverageFrom": [
