@@ -7,10 +7,10 @@ A library of React components created in "Creating Reusable React Components" on
 npm install ps-react
 ```
 
-# Docs
+## Docs
 [Component documentation](http://coryhouse.github.io/ps-react)
 
-# 🎉 Component Hall of Fame 🎉
+## Component Hall of Fame 🎉
 Here's a list of components built by your fellow viewers!
 
 Submit a pull request to add your link here... :)
