@@ -7,7 +7,7 @@ var chokidar = require('chokidar');
 var paths = {
   examples: path.join(__dirname, '../src', 'docs', 'examples'),
   components: path.join(__dirname, '../src', 'components'),
-  output: path.join(__dirname, '../config', 'componentData.js')
+  output: path.join(__dirname, '../src', 'docs', 'componentData.js')
 };
 
 const enableWatchMode = process.argv.slice(2) == '--watch';
@@ -30,7 +30,7 @@ function generate(paths) {
       errors.push('An error occurred while attempting to generate metadata for ' + componentName + '. ' + error);
     }
   });
-  writeFile(paths.output, "module.exports = " + JSON.stringify(errors.length ? errors : componentData));
+  writeFile(paths.output, "module.exports = /* eslint-disable */ " + JSON.stringify(errors.length ? errors : componentData));
 }
 
 function getComponentData(paths, componentName) {

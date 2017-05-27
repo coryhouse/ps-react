@@ -27,7 +27,7 @@ class Example extends React.Component {
         <ExampleComponent />
 
         <p>
-          <a href="#" onClick={this.toggleCode}>
+          <a href="" onClick={this.toggleCode}>
             {showCode ? "Hide" : "Show"} Code
           </a>
         </p>
