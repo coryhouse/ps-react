@@ -22,7 +22,7 @@ Submit a pull request to add your link here... :)
 Here's a list of popular component libraries I mention at the end of the course:
 - [Material UI](material-ui.com)
 - [React Toolbox](react-toolbox.com) 
-- React Bootstrap](react-bootstrap.github.io)
+- [React Bootstrap](react-bootstrap.github.io)
 - [React Foundation](react.foundation)
 - [Blueprint](blueprintjs.com)
 - [Ant Design](ant.design)
