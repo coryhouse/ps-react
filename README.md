@@ -33,7 +33,7 @@ Here's a list of popular component libraries I mention at the end of the course:
 - [Pivital Styleguide](styleguide.cfapps.io)
 - [Cloudflare UI](cloudflare.github.io)
 - [Semantic UI React](react.semantic-ui.com)
-- Grommet](grommet.github.io)
+- [Grommet](grommet.github.io)
 - [Mulesoft Components](ux.mulesoft.com)
 - [Belle](nikgraf.github.io/belle)
 - [MUI](muicss.com)
