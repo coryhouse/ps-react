@@ -8,7 +8,7 @@ npm install ps-react
 ```
 
 ## Issues
-I'll add tips for common problems and address any known course issues here.
+[Here's a list of current known issues in the course](https://github.com/coryhouse/ps-react/issues).
 
 ## Docs
 [Component documentation](http://coryhouse.github.io/ps-react)
