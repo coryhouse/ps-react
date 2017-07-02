@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../prism';
 import {PrismCode} from "react-prism";
-import '../prism-okaida.css';
+import 'prismjs/themes/prism-okaidia.css';
 
 class CodeExample extends React.Component {
   render() {
