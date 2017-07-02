@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "highlight.js": "9.10.0",
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "styled-components": "1.4.5"
