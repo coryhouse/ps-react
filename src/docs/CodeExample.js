@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../prism';
 import {PrismCode} from "react-prism";
-
-// This way is easy, but adds 170K gzipped to bundle since all langs are included.
-// import Highlight from 'react-highlight';
+import '../prism-okaida.css';
 
 class CodeExample extends React.Component {
   render() {
