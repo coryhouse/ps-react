@@ -25,7 +25,7 @@ function generate(paths) {
   var errors = [];
   var componentData = getDirectories(paths.components).map(function(componentName) {
     try {
-      return getComponentData(paths, componentName)
+      return getComponentData(paths, componentName);
     } catch(error) {
       errors.push('An error occurred while attempting to generate metadata for ' + componentName + '. ' + error);
     }
@@ -48,8 +48,8 @@ function getComponentData(paths, componentName) {
 function getExampleData(examplesPath, componentName) {
   var examples = getExampleFiles(examplesPath, componentName);
   return examples.map(function(file) {
-    var filePath = path.join(examplesPath, componentName, file)
-    var content = readFile(filePath)
+    var filePath = path.join(examplesPath, componentName, file);
+    var content = readFile(filePath);
     var info = parse(content);
     return {
       // By convention, component name should match the filename.
