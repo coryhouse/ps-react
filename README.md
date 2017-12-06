@@ -18,6 +18,8 @@ Here's a list of components built by your fellow viewers!
 
 Submit a pull request to add your link here... :)
 
+- [recipe-components](https://github.com/vjwilson/recipe-components) A set of React components which can be used to make a recipe site, by Van J. Wilson. Documentation at [https://vjwilson.github.io/recipe-components/](https://vjwilson.github.io/recipe-components/)
+
 ## React Component libraries
 Here's a list of popular component libraries I mention at the end of the course:
 - [Material UI](http://material-ui.com)
