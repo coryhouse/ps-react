@@ -89,13 +89,12 @@
     "gen:docs-watch": "npm run gen:docs -- --watch",
     "build:docs": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "build:css": "cross-env NODE_ENV=production webpack --config config/webpack.config.prod.js",
     "prebuild:lib": "rimraf lib",
-    "build:lib": "npm-run-all --parallel build:commonjs build:css build:copy-files",
+    "build:lib": "npm-run-all --parallel build:commonjs build:copy-files",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "predeploy:docs": "npm run build:docs",
     "deploy:docs": "gh-pages -d build",
-    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
+    "build:commonjs": "cross-env NODE_ENV=production webpack --config config/webpack.config.prod.js",
     "prepublish": "npm run build:lib"
   },
   "jest": {
