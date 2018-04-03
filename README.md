@@ -22,6 +22,9 @@ Submit a pull request to add your link here... :)
 
 - [react-chatbot](https://github.com/abhiisheek/react-chatbot) A library of React components which can be used to make/add a chatbot capability, by Abhishek Ramesh. Documentation at [https://abhiisheek.github.io/react-chatbot/](https://abhiisheek.github.io/react-chatbot/)
 
+- [flexboxgrid-components](https://github.com/darcusfenix/flexboxgrid-components) A library of React components which can be used to add classes of flexboxgrid to div tags, by Juan Crisóstomo. Documentation at [https://darcusfenix.github.io/flexboxgrid-components/](https://darcusfenix.github.io/flexboxgrid-components/)
+
+
 ## React Component libraries
 Here's a list of popular component libraries I mention at the end of the course:
 - [Material UI](http://material-ui.com)
