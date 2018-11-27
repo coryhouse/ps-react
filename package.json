@@ -136,12 +136,18 @@
   "babel": {
     "presets": [
       [
-        "@babel/env",
+        "@babel/preset-env",
         {
           "modules": "commonjs"
         }
       ],
-      "react-app"
+      [
+        "react-app",
+        {
+          "helpers": true,
+          "absoluteRuntime": false
+        }
+      ]
     ]
   },
   "eslintConfig": {
