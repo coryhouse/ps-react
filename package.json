@@ -22,13 +22,13 @@
     "pluralsight"
   ],
   "dependencies": {
-    "react": "^16.0.2",
-    "react-dom": "^16.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "styled-components": "2.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.0",
     "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "autoprefixer": "7.1.6",
     "babel-core": "^7.0.0-bridge.0",
@@ -70,7 +70,7 @@
     "react-addons-test-utils": "15.6.2",
     "react-dev-utils": "^4.2.1",
     "react-docgen": "2.20.0",
-    "react-test-renderer": "^16.0.0",
+    "react-test-renderer": "^16.6.3",
     "rimraf": "2.6.2",
     "style-loader": "0.19.0",
     "sw-precache-webpack-plugin": "0.11.4",
